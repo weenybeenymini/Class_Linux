@@ -1,0 +1,1 @@
+/home/girinssh/Downloads/linux-5.4.67/scripts/gdb/vmlinux-gdb.py
