@@ -2553,6 +2553,10 @@ __SYSCALL_64(435, sys_clone3, ptregs)
 #ifdef CONFIG_X86_X32_ABI
 __SYSCALL_X32(435, __x64_sys_clone3, ptregs)
 #endif
+__SYSCALL_64(436, sys_mycall, )
+#ifdef CONFIG_X86_X32_ABI
+__SYSCALL_X32(436, sys_mycall, )
+#endif
 #ifdef CONFIG_X86_X32_ABI
 __SYSCALL_X32(512, __x32_compat_sys_rt_sigaction, )
 #endif

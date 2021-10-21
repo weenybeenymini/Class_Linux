@@ -844,7 +844,7 @@ asmlinkage long sys_clone(unsigned long, unsigned long, int __user *, unsigned l
 	       int __user *);
 #else
 #ifdef CONFIG_CLONE_BACKWARDS3
-asmlinkage long sys_clone(unsigned long, unsigned long, int, int __user *,
+asmlinkage long sys _clone(unsigned long, unsigned long, int, int __user *,
 			  int __user *, unsigned long);
 #else
 asmlinkage long sys_clone(unsigned long, unsigned long, int __user *,
@@ -853,6 +853,8 @@ asmlinkage long sys_clone(unsigned long, unsigned long, int __user *,
 #endif
 
 asmlinkage long sys_clone3(struct clone_args __user *uargs, size_t size);
+
+asmlinkage long sys_mycall(void);
 
 asmlinkage long sys_execve(const char __user *filename,
 		const char __user *const __user *argv,
@@ -1420,5 +1422,4 @@ long ksys_old_shmctl(int shmid, int cmd, struct shmid_ds __user *buf);
 long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
 			    unsigned int nsops,
 			    const struct old_timespec32 __user *timeout);
-
 #endif

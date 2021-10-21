@@ -39,8 +39,8 @@
 
 #define stack_canary_offset 40 /* offsetof(struct fixed_percpu_data, stack_canary) */
 
-#define __NR_syscall_max 435 /* sizeof(syscalls_64) - 1 */
-#define NR_syscalls 436 /* sizeof(syscalls_64) */
+#define __NR_syscall_max 436 /* sizeof(syscalls_64) - 1 */
+#define NR_syscalls 437 /* sizeof(syscalls_64) */
 #define __NR_syscall_x32_max 547 /* sizeof(syscalls_x32) - 1 */
 #define X32_NR_syscalls 548 /* sizeof(syscalls_x32) */
 #define __NR_syscall_compat_max 435 /* sizeof(syscalls_ia32) - 1 */
